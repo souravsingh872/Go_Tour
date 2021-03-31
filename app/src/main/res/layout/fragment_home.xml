@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".HomeFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/toprelative"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_bar"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/menubar_image"/>
+
+                <ImageView
+                    android:id="@+id/authorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/author" />
+
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toprelative"
+                android:fontFamily="@font/ada"
+                android:textSize="24dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:id="@+id/traveltriptext"
+                android:text="Get Ready For \nThe Travel Trip"/>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/traveltriptext"
+                android:textColorHint="@color/lightblack"
+                android:hint="Find your Location"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittextdesign"
+                android:id="@+id/searchbox"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextdesign"
+                android:backgroundTint="@color/orange"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/searchbox"
+                android:id="@+id/searchicon"
+                android:layout_below="@id/traveltriptext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Location"
+                android:textColor="@color/black"
+                android:fontFamily="@font/ada"
+                android:textSize="20sp"
+                android:layout_below="@+id/searchbox"
+                android:id="@+id/mylocation"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mylocation"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/layoutdesign"
+                android:id="@+id/cardview1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_book_mark"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignTop="@id/cardview1"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+                        <com.android.liuzhuang.rcimageview.RoundCornerImageView
+                            android:layout_width="60dp"
+                            app:rciv_radius="10dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/kashmir1"
+                            android:id="@+id/cardimage"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Winter in Kashmir"
+                                android:fontFamily="@font/ada"
+                                android:textColor="@color/black"
+                                android:id="@+id/textcard"
+                                android:textSize="18sp"
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Location"
+                                android:layout_marginLeft="10dp"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/ada"
+                                android:padding="5dp"
+                                android:id="@+id/locationcardtext"
+                                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                                android:textColor="@color/lightblack"/>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/ada"
+                        android:text="Kashmir there so much more to deserve Read \nabout the Kashmir tonew wave of eco travel"
+                        android:textColor="@color/lightblack"
+                        android:id="@+id/textcardline"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/layoutdesign"
+                android:layout_below="@+id/cardview1"
+                android:backgroundTint="@color/white"
+                android:id="@+id/cardrecycler"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Best Places"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/ada"
+                            android:id="@+id/bestplaces"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="see all"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/light"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/ada"
+                            android:layout_marginRight="15dp"
+                            android:id="@+id/seeall"
+                            android:gravity="right"
+                            android:layout_marginTop="15dp"
+                            />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:background="@drawable/layoutdesign"
+                        android:id="@+id/recyclerbig"
+                        android:layout_margin="20dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".MassageFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topbarchatrelative"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="44dp"
+               android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/chatauthorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/author" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Chat"
+                    android:fontFamily="@font/ada"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+
+                <ImageView
+                    android:id="@+id/mapbell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bell" />
+
+            </RelativeLayout>
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/topbarchatrelative"
+                android:textColorHint="@color/lightblack"
+                android:hint="Find your Location"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittextdesign"
+                android:id="@+id/searchboxchat"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edittextdesign"
+                android:backgroundTint="@color/orange"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/searchboxchat"
+                android:id="@+id/searchiconchat"
+                android:layout_below="@id/topbarchatrelative"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_below="@+id/searchboxchat"
+                android:id="@+id/recyclerchat"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>

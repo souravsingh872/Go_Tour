@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <com.android.liuzhuang.rcimageview.RoundCornerImageView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        app:rciv_radius="20dp"
+        android:src="@drawable/kasmir2"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:id="@+id/explorebigimage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindustan beauty"
+        android:fontFamily="@font/ada"
+        android:layout_alignBottom="@id/explorebigimage"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:id="@+id/exploretextname"
+          android:layout_marginBottom="100dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kashmir"
+        android:fontFamily="@font/ada"
+        android:layout_marginBottom="5dp"
+        android:layout_alignBottom="@id/explorebigimage"
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:padding="5dp"
+        android:id="@+id/locationexploretext"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:textColor="@color/white"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="@font/ada"
+        android:background="@drawable/layoutdesign"
+        android:layout_alignBottom="@id/explorebigimage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="53,000"
+        android:textSize="8dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/recyclerbutton"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/explorebigimage"
+        android:text="Beautyfull Places of india if you want\n to visit here Gotour fulfill your dreams"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ada"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/textexploreline"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>

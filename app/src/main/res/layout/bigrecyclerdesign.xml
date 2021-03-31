@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.android.liuzhuang.rcimageview.RoundCornerImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:rciv_radius="10dp"
+        android:src="@drawable/haryana"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:id="@+id/recyclerimage"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hindustan beauty"
+        android:textSize="19sp"
+        android:fontFamily="@font/ada"
+        android:textColor="@color/white"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBottom="@+id/recyclerimage"
+        android:id="@+id/recyclertext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kashmir"
+        android:id="@+id/locationrecyclertext"
+        android:layout_marginBottom="15dp"
+        android:textSize="19sp"
+        android:fontFamily="@font/ada"
+        android:drawablePadding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_alignBottom="@+id/recyclerimage"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"/>
+  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="30dp"
+      android:fontFamily="@font/ada"
+      android:background="@drawable/layoutdesign"
+      android:layout_alignBottom="@id/recyclerimage"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="30dp"
+      android:text="53,000"
+      android:textSize="8dp"
+      android:id="@+id/recyclerbutton"
+      android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+
+
+</RelativeLayout>

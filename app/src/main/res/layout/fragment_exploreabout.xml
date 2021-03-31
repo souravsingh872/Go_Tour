@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".ExploreaboutFragment">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/topbutton"
+                android:layout_marginTop="44dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:id="@+id/backarrow"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_more"
+                    android:id="@+id/vector"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/vector"
+                    android:src="@drawable/ic_bell"
+                    android:id="@+id/bell"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"/>
+
+            </RelativeLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_margin="15dp"
+                android:id="@+id/viwepagerabout"
+                android:layout_below="@id/topbutton"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmarkwhite"
+                android:layout_marginTop="7dp"
+                android:layout_alignTop="@+id/viwepagerabout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"/>
+
+
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ci_drawable="@color/orange"
+                android:id="@+id/aboutindicators"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/viwepagerabout"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutindicators"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="19sp"
+                android:fontFamily="@font/ada"
+                android:id="@+id/beautyhindustan"
+                android:textColor="@color/black"
+                android:text="Beauty of Hindustan"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_cloud"
+                android:layout_below="@id/aboutindicators"
+                android:text="30'c"
+                android:fontFamily="@font/ada"
+                android:textColor="@color/lightblack2"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+               android:drawablePadding="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:layout_below="@id/beautyhindustan"
+                android:text="Kashmir , Haryana , Chandighar"
+                android:textColor="@color/lightblack2"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ada"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/locationcities"
+                android:drawablePadding="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/locationcities"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/ada"
+                android:textSize="14dp"
+                android:text="53,000"
+                android:id="@+id/prizebutton"
+                android:background="@drawable/layoutdesign"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/prizebutton"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/ada"
+                android:textSize="18sp"
+                android:id="@+id/services"
+                android:textColor="@color/black"
+                android:text="Services"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/layoutdesign"
+                android:layout_below="@id/services"
+                android:id="@+id/servicescard">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:weightSum="5"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_sun"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_air"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_boat"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_car"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_bick"/>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/servicescard"
+                android:textColor="@color/lightblack2"
+                android:text="Tourism in India is important for the country's economy and is growing rapidly. The World Travel and Tourism Council calculated that tourism generated ₹16.91 lakh crore (US$240 billion) or 9.2% of India's GDP in 2018 and supported 42.673 million jobs, 8.1% of its total employment.[1] The sector is predicted to grow at an annual rate of 6.9% to ₹32.05 lakh crore (US$450 billion) by 2028 (9.9% of GDP).[2] In October 2015, India's medical tourism sector was estimated to be worth US$3 billio"
+              android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/ada"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                />
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

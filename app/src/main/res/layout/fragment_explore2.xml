@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Explore2">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topbarrelative"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginRight="20dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/menu_bar"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/exploremenubar_image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Explore"
+                    android:fontFamily="@font/ada"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+
+                <ImageView
+                    android:id="@+id/exploreauthorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/author" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/topbarrelative"
+                android:textColorHint="@color/lightblack"
+                android:hint="Find your Location"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittextdesign"
+                android:id="@+id/searchboxexp2"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextdesign"
+                android:backgroundTint="@color/orange"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/searchboxexp2"
+                android:id="@+id/searchiconexp2"
+                android:layout_below="@id/topbarrelative"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_below="@+id/searchboxexp2"
+                tools:listitem="@layout/exp2recyclerdesign"
+                android:id="@+id/exp2recycler"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MapFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topbarrelative"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="44dp"
+                >
+
+                <ImageView
+                    android:id="@+id/mapeauthorimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/author" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/ada"
+                    android:text="Map"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"/>
+
+                <ImageView
+                    android:id="@+id/mapbell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bell" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Location"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:fontFamily="@font/ada"
+                android:layout_below="@+id/searchboxmap"
+                android:id="@+id/mylocationmap"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/topbarrelative"
+                android:textColorHint="@color/lightblack"
+                android:hint="Find your Location"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/ada"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/edittextdesign"
+                android:id="@+id/searchboxmap"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittextdesign"
+                android:backgroundTint="@color/orange"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@id/searchboxmap"
+                android:id="@+id/searchiconmap"
+                android:layout_below="@id/topbarrelative"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mylocationmap"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/layoutdesign"
+                android:id="@+id/cardview1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_book_mark"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignTop="@id/cardview1"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/kashmir1"
+                        android:id="@+id/cardimage"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Winter in Kashmir"
+                            android:textColor="@color/black"
+                            android:id="@+id/textcard"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/ada"
+                            android:layout_marginLeft="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Location"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/ada"
+                            android:padding="5dp"
+                            android:id="@+id/locationcardtext"
+                            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                            android:textColor="@color/lightblack"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kashmir there so much more to deserve Read \nabout the Kashmir tonew wave of eco travel"
+                        android:textColor="@color/lightblack"
+                        android:fontFamily="@font/ada"
+                        android:textSize="16dp"
+                        android:id="@+id/textcardline"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mapimage"
+                android:layout_below="@id/cardview1"
+                android:layout_marginTop="35dp"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

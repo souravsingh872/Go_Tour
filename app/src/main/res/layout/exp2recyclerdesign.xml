@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/linerdesignexp2">
+        <com.android.liuzhuang.rcimageview.RoundCornerImageView
+            android:layout_width="80dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/kasmir2"
+            android:scaleType="fitXY"
+            android:id="@+id/imageexp2"
+            app:rciv_radius="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/newexpliner"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/imageexp2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Winter in chandighar"
+                android:fontFamily="@font/ada"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/textexp2"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="16sp"
+                android:fontFamily="@font/ada"
+                android:padding="10dp"
+                android:id="@+id/locationcardtext"
+                android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                android:textColor="@color/lightblack"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/edittextdesign"
+                    android:backgroundTint="@color/lightblack"
+                    android:text="7 days"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/ada"
+                    android:textSize="12sp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/edittextdesign"
+                    android:backgroundTint="@color/lightblack"
+                    android:text="Winter"
+                    android:fontFamily="@font/ada"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/ada"
+            android:background="@drawable/layoutdesign"
+           android:layout_toRightOf="@id/newexpliner"
+          android:layout_centerVertical="true"
+            android:text="$53,00"
+            android:textSize="8sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/recyclerbuttonexp2"
+            android:layout_marginLeft="10dp"
+            />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

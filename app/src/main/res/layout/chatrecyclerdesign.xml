@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="10dp"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/image2"
+           android:id="@+id/chatrecyclerimage"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Johny wells"
+               android:fontFamily="@font/ada"
+               android:textColor="@color/black"
+               android:layout_marginLeft="15dp"
+               android:id="@+id/nametextchat"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Hii i am johny wells"
+               android:fontFamily="@font/ada"
+               android:textColor="@color/lightblack2"
+               android:layout_marginLeft="15dp"
+               android:id="@+id/massagetextchat"/>
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="right"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="15/march/2021"
+               android:fontFamily="@font/ada"
+               android:textColor="@color/lightblack2"
+               android:layout_marginLeft="15dp"
+               android:id="@+id/datetextchat"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="10:30AM"
+               android:fontFamily="@font/ada"
+               android:textColor="@color/lightblack2"
+               android:layout_marginLeft="15dp"
+               android:id="@+id/timetextchat"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

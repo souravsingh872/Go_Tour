@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title=""
+        android:icon="@drawable/ic_options"
+        android:id="@+id/homeFragment2"
+        />
+    <item
+        android:title=""
+        android:icon="@drawable/ic_bell"
+        android:id="@+id/notificationFragment"
+        />
+    <item
+        android:title=""
+        android:icon="@drawable/ic_message"
+        android:id="@+id/massageFragment"
+        />
+    <item
+        android:title=""
+        android:icon="@drawable/ic_location"
+        android:id="@+id/mapFragment"
+        />
+    <item
+        android:title=""
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_person"
+        />
+
+</menu>

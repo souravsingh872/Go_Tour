@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <com.android.liuzhuang.rcimageview.RoundCornerImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/rupey"
+        android:scaleType="fitXY"
+        android:id="@+id/paymentimage"
+        android:layout_margin="20dp"/>
+</LinearLayout>
